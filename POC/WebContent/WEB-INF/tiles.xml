@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="form" extends="base.definition">
+		<put-attribute name="title" value="Proof of concept" />
+		<put-attribute name="body" value="/WEB-INF/jsp/form/formDetails.jsp" />
+	</definition>
+	
+	<definition name="payLoadInputForm" extends="base.definition">
+		<put-attribute name="title" value="Payload Input Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/form/payLoadInputForm.jsp" />
+	</definition>
+	
+	<definition name="formResults" extends="base.definition">
+		<put-attribute name="title" value="Result Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/form/showResultForm.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	
+	<definition name="uploadfile" extends="base.definition">
+		<put-attribute name="title" value="File Upload" />
+		<put-attribute name="body" value="/WEB-INF/jsp/upload/uploadfile.jsp" />
+	</definition>
+	
+	<definition name="indexFile" extends="base.definition">
+		<put-attribute name="title" value="File Upload" />
+		<put-attribute name="body" value="/WEB-INF/jsp/upload/uploadfileindex.jsp" />
+	</definition>
+	
+	<definition name="multipleUpload" extends="base.definition">
+		<put-attribute name="title" value="File Upload" />
+		<put-attribute name="body" value="/WEB-INF/jsp/upload/multipleUpload.jsp" />
+	</definition>
+	
+	<definition name="dynamicForm" extends="base.definition">
+		<put-attribute name="title" value="Dynamic of concept" />
+		<put-attribute name="body" value="/WEB-INF/jsp/form/dynamicForm.jsp" />
+	</definition>
+	
+	<definition name="dynamicDisplayForm" extends="base.definition">
+		<put-attribute name="title" value="Dynamic of concept" />
+		<put-attribute name="body" value="/WEB-INF/jsp/form/dynamicResultForm.jsp" />
+	</definition>
+	<definition name="showEvents" extends="base.definition">
+		<put-attribute name="title" value="Calendar Layout" />
+		<put-attribute name="body" value="/WEB-INF/jsp/calendar/fullCalendar.jsp" />
+	</definition>
+	
+</tiles-definitions>
